@@ -15,7 +15,7 @@ const appRoutes: Routes = [
 @NgModule({
   /* - ALLEEN in app-routing.module forRoot, anders altijd forChild()
    * - preloadingStrategy -> dit is een lazyLoad module, maar laad de module alvast in als de gebruiker andere dingen doet */
-  imports: [RouterModule.forRoot(appRoutes, {preloadingStrategy: PreloadAllModules})],
+  imports: [RouterModule.forRoot(appRoutes /*,{preloadingStrategy: PreloadAllModules}*/)],
   exports: [RouterModule] /* export de module, dit komt er binnen bij een andere module die deze module import */
 })
 
