@@ -1,0 +1,17 @@
+<div class="row">
+  <div class="col-xs-12">
+    <button class="btn btn-success" (click)="onNewRecipe()">New Recipe</button>
+  </div>
+</div>
+<hr>
+<div class="row">
+  <div class="col-xs-12">
+    <!-- Je kan achter een for lus op deze manier de index ophalen. vervolgens word via property binding de index
+     variable gezet -->
+    <app-recipe-item *ngFor="let recipeCurrent of recipes; let i = index" [recipe]="recipeCurrent" [index]="i"></app-recipe-item>
+  </div>
+</div>
+
+
+
+
