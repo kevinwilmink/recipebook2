@@ -19,5 +19,7 @@ const appRoutes: Routes = [
   exports: [RouterModule] /* export de module, dit komt er binnen bij een andere module die deze module import */
 })
 
+//test
+
 export class AppRoutingModule { /* what is exported here, will be imported the moment this module is imported */
 }
