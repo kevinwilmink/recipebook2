@@ -4,18 +4,17 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    /* "start": "ng serve", */ // Heroku
     "build": "ng build --prod",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "postinstall": "ng build --aot -prod", // Heroku
-    "start": "node server.js" // Heroku
+    "postinstall": "ng build --aot -prod",
+    "start": "node server.js"
   },
   "private": true,
   "dependencies": {
-    "@angular/cli": "~1.7.4", // Heroku
-    "@angular/compiler-cli": "^5.2.0", // Heroku
+    "@angular/cli": "~1.7.4",
+    "@angular/compiler-cli": "^5.2.0",
     "@angular/animations": "^5.2.0",
     "@angular/common": "^5.2.0",
     "@angular/compiler": "^5.2.0",
@@ -32,8 +31,6 @@
     "zone.js": "^0.8.19"
   },
   "devDependencies": {
-  /*  "@angular/cli": "~1.7.4", //Heroku
-    "@angular/compiler-cli": "^5.2.0", */ //Heroku
     "@angular/language-service": "^5.2.0",
     "@types/jasmine": "~2.8.3",
     "@types/jasminewd2": "~2.0.2",
@@ -50,7 +47,7 @@
     "ts-node": "~4.1.0",
     "tslint": "~5.9.1",
     "typescript": "~2.5.3"
-  },"engines": { // gehele engines: Heroku
+  },"engines": {
     "node": "8.11.1",
     "npm": "6.0.0"
   }
